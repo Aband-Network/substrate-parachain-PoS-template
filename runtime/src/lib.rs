@@ -15,6 +15,7 @@ pub mod voter_bags;
 pub mod xcm_config;
 
 use collective::*;
+use sp_std::convert::{TryInto, TryFrom};
 use cumulus_pallet_parachain_system::RelayNumberStrictlyIncreases;
 pub use frame_election_provider_support::{
 	onchain, BalancingConfig, ElectionDataProvider, SequentialPhragmen, VoteWeight,
