@@ -43,7 +43,7 @@ jobs:
     #   run: cargo +nightly clippy -- -D warnings
 
     - name: Cargo Default
-      run: cargo default nightly
+      run: rustup default nightly
 
     - name: Init Submodule
       run: git submodule update --init --recursive
